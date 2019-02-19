@@ -1,0 +1,10 @@
+{
+  "name": "zignis-plugin-zhike-dingtalk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "zignis": "^1.2.12",
+    "zignis-plugin-zhike": "^1.2.22"
+  }
+}
