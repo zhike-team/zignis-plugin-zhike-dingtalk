@@ -12,7 +12,7 @@ npm install zignis zignis-plugin-zhike zignis-plugin-zhike-dingtalk
 
 ## 用法
 
-目前插件封装了全部5种自定义机器人能够发送的消息类型，每种类型一个命令，每个命令有各自的参数和选项
+dingbot 命令有个别名：ding，可以让你少敲几个字母。目前插件封装了全部5种自定义机器人能够发送的消息类型，每种类型一个命令，每个命令有各自的参数和选项
 
 ```
 zignis zhike dingbot <type>
@@ -30,7 +30,11 @@ Send message to dingtalk
   --token                    Set Dingtalk token                                                          [默认值: false]
 ```
 
-另外，dingbot 命令有个别名：ding，可以让你少敲几个字母。
+另外，值得一提的是钉钉的 markdown 类型和 action-card 类型都允许传 `Markdown` 格式的内容，只要加上 `--file` 命令就会把传入的内容当做一个路径解析，加载一个 Markdown 文件进来用于消息发送。例如：
+
+```
+zignis zhike ding md README.md --file
+```
 
 ## 关于 Token
 
