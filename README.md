@@ -51,8 +51,10 @@ zignis zhike ding 你好 --token=TOKEN
 第二种：在项目的 `.zignisrc.json` 中配置 tokens:
 
 ```
-"tokens": {
-  "TOKEN": "测试"
+"dingtalk": {
+    "tokens": {
+        "TOKEN": "测试"
+    }
 }
 ```
 

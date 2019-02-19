@@ -5,8 +5,8 @@ exports.getToken = function * (argv) {
     return argv.token
   } else {
     const config = Utils.getApplicationConfig()
-    const tokens = config.tokens 
-                    ? config.tokens
+    const tokens = config.dingtalk && config.dingtalk.tokens 
+                    ? config.dingtalk.tokens 
                     : (Utils._.get(Utils.getCombinedConfig(), 'commandDefault.dingtalk.tokens') || {})
 
     const tokenCount = Object.keys(tokens).length
