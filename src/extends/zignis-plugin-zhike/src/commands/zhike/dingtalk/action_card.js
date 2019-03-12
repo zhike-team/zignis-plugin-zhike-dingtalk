@@ -39,7 +39,7 @@ exports.handler = function (argv) {
     argv.singleUrl = split[1] || ''
   }
 
-  Utils.co(function * () {
+  return Utils.co(function * () {
     const token = yield DingTalkUtils.getToken(argv)
     const dingbot = new DingBot(token)
     yield dingbot.send({

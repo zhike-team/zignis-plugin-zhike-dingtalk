@@ -14,7 +14,7 @@ exports.builder = function (yargs) {
 
 exports.handler = function (argv) {
   argv.links = !argv.links || Utils._.isArray(argv.links) ? argv.links : [argv.links]
-  Utils.co(function * () {
+  return Utils.co(function * () {
     const token = yield DingTalkUtils.getToken(argv)
     const dingbot = new DingBot(token)
     yield dingbot.send({
