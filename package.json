@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
-    "zignis": "^1.2.20",
-    "zignis-plugin-zhike": "^1.2.28"
+    "zignis": "^1.5.1",
+    "zignis-plugin-zhike": "^1.5.3"
   }
 }
