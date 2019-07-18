@@ -10,7 +10,7 @@ exports.aliases = 'md'
 
 exports.builder = function (yargs) {
   yargs.option('at', { default: false, describe: '@PHONE_NUMBER' })
-  yargs.option('at-all', { default: false, describe: '@ALL', alias: 'all' })
+  yargs.option('at-all', { describe: '@ALL', alias: 'all' })
   yargs.option('file', { default: false, describe: 'If set, text will be used as markdown file path in current directory.' })
   yargs.option('title', { default: 'Markdown Message', describe: 'Title will be used in stream.' })
   // yargs.commandDir('text')

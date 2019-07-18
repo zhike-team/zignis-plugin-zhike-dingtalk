@@ -9,7 +9,7 @@ exports.desc = 'Send text type bot message'
 
 exports.builder = function (yargs) {
   yargs.option('at', { default: false, describe: '@PHONE_NUMBER' })
-  yargs.option('at-all', { default: false, describe: '@ALL', alias: 'all' })
+  yargs.option('at-all', { describe: '@ALL', alias: 'all' })
   // yargs.commandDir('text')
 }
 
